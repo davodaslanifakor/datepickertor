@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+  <div class="main">
+    <datepicker-tor />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import datepickerTor from "./components/datepickertor";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    datepickerTor
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus" scoped>
+.main
+  width 100%
+  margin 80px auto
+  display flex
+  justify-content center
 </style>
+
